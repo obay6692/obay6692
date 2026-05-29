@@ -1,46 +1,92 @@
-## Hi, I'm Obay 👋
+# ☁️ Greetings From Production ☁️
 
-**Software Architect & DevOps Engineer** from Norway. I build, ship, and operate systems end-to-end — from embedded firmware on STM32 boards, through Kubernetes platforms running a full social-media stack, to a production-grade fintech SaaS for Norwegian SMBs.
+```python
+from enum import Enum
+from dataclasses import dataclass
 
-Recent graduate of the **University of Agder (UiA)**, now applying what I learned to real-world DevOps, cloud-native, fintech, and IoT problems.
+
+class University(Enum):
+    UNIVERSITY_OF_AGDER = "UiA — Grimstad, Norway"
+
+
+@dataclass
+class Engineer:
+    name:        str
+    location:    str
+    university:  University
+    field:       str
+    role:        str
+    stack:       dict
+    currently:   str
+    looking_for: str
+
+
+def main():
+    me = Engineer(
+        name        = "Obay bin Khadra",
+        location    = "Norway 🇳🇴",
+        university  = University.UNIVERSITY_OF_AGDER,
+        field       = "Data Engineering & Software Development — graduated 2025",
+        role        = "Software Architect & DevOps Engineer",
+
+        stack = {
+            "cloud":      ["Kubernetes", "ArgoCD", "Sealed Secrets", "OpenStack"],
+            "iac":        ["Terraform", "Ansible", "Vagrant", "Docker", "cloud-init"],
+            "backend":    ["FastAPI", "ASP.NET Core", "Flask", "Go", "SQLAlchemy", "EF Core"],
+            "frontend":   ["React", "React Router", "Axios", "Recharts"],
+            "ai_vision":  ["OpenCV", "Ollama", "feature matching", "face recognition"],
+            "data":       ["Streamlit", "Plotly", "Monte Carlo", "Pandas", "NumPy"],
+            "embedded":   ["Mbed OS", "STM32", "I²C", "WiFi", "RTOS", "Thingsboard"],
+            "security":   ["OAuth 2.0", "TOTP 2FA", "bcrypt", "JWT", "OWASP basics"],
+            "languages":  ["Python", "C", "C++", "C#", "Go", "JavaScript", "Bash"],
+        },
+
+        currently   = "Maintaining Virtual CFO — a production-grade fintech SaaS for Norwegian SMBs",
+        looking_for = "DevOps · Software Architecture · Cloud Engineering · IoT roles",
+    )
+
+    print(f"Hello, I'm {me.name} 👋")
+
+
+if __name__ == "__main__":
+    main()
+```
 
 ---
 
-### 🛠️ What I work with
+## 🎓 Bachelor's Graduation Project
+
+### [🏦 Virtual CFO](https://github.com/obay6692/virtual-cfo)
+
+A full-stack financial management platform for Norwegian SMBs.
 
 ```
-☁️  Cloud / Platform    Kubernetes · ArgoCD · Sealed Secrets · OpenStack
-🏗️  IaC                 Terraform · Ansible · Vagrant · Docker · cloud-init
-🔧  Backend             FastAPI · ASP.NET Core · Flask · Go · REST APIs · SQLAlchemy · EF Core
-🎨  Frontend            React · React Router · Axios · Recharts
-🤖  AI / Vision         OpenCV · feature matching · face recognition
-📊  Data / Stats        Streamlit · Plotly · Monte Carlo · Pandas · NumPy
-⚙️  Embedded / IoT      Mbed OS · STM32 · I²C · WiFi · RTOS · Thingsboard
-🔐  Security            OAuth 2.0 · TOTP 2FA · bcrypt · OWASP basics
-💻  Languages           Python · C · C++ · C# · Go · JavaScript · Bash
+FastAPI  +  React  +  Ollama  +  Docker  +  Nginx (HTTPS)
+   │         │         │          │         │
+   └─ JWT, TOTP 2FA, bcrypt, rate limiting, account lockout
+             │
+             └─ Dashboard · Invoices · Cash-flow forecast · Payment prioritization · AI advisor · GDPR export
 ```
 
 ---
 
-### 🎓 Bachelor's Graduation Project
+## 🚀 Featured Projects
 
-[**Virtual CFO**](https://github.com/obay6692/virtual-cfo) — full-stack financial management platform for Norwegian SMBs. **FastAPI + React** backend & frontend, **JWT + TOTP 2FA** authentication, rate limiting, account lockout, GDPR-compliant data export, **smart payment prioritization** (5-factor weighted algorithm), **30-day cash flow forecasting** with Norwegian MVA deadlines, and an **AI financial advisor** powered by Ollama. Fully Dockerized with an Nginx reverse proxy serving over HTTPS.
-
-### 🚀 Other featured projects
-
-| Project | What it is |
-|---------|------------|
-| [**k8s-mastodon-monitoring-stack**](https://github.com/obay6692/k8s-mastodon-monitoring-stack) | End-to-end Kubernetes platform — Mastodon, ArgoCD, sealed-secrets, and a full Prometheus / Grafana / Loki monitoring stack. |
-| [**mbed-stm32-embedded-projects**](https://github.com/obay6692/mbed-stm32-embedded-projects) | 6 embedded projects on STM32 DISCO-L475VG-IOT01A — GPIO, I²C sensors, WiFi sockets, RTOS, and IoT telemetry to Thingsboard. |
-| [**flask-2fa-oauth-app**](https://github.com/obay6692/flask-2fa-oauth-app) | Flask web app with TOTP two-factor authentication, GitHub OAuth, bcrypt password hashing, and account lockout. |
-| [**ikt114-it-orchestration-devops**](https://github.com/obay6692/ikt114-it-orchestration-devops) | DevOps stack from scratch — bash, Docker, Vagrant, Ansible, and Terraform IaC deploying CTFd on OpenStack. |
-| [**us_election_simulation_project**](https://github.com/obay6692/us_election_simulation_project) | Monte Carlo simulation of U.S. presidential elections — multi-page Streamlit dashboard with historical comparison and interactive maps. |
+| | Project | Stack |
+|---|---------|-------|
+| ☸️ | [**k8s-mastodon-monitoring-stack**](https://github.com/obay6692/k8s-mastodon-monitoring-stack) | Mastodon + ArgoCD + Sealed Secrets + Prometheus/Grafana/Loki |
+| 🔧 | [**mbed-stm32-embedded-projects**](https://github.com/obay6692/mbed-stm32-embedded-projects) | STM32 · Mbed OS · I²C · WiFi · RTOS · IoT telemetry |
+| 🛠️ | [**ikt114-it-orchestration-devops**](https://github.com/obay6692/ikt114-it-orchestration-devops) | Bash · Docker · Vagrant · Ansible · Terraform · OpenStack |
+| 🔐 | [**flask-2fa-oauth-app**](https://github.com/obay6692/flask-2fa-oauth-app) | Flask · GitHub OAuth · TOTP 2FA · bcrypt · lockout |
+| 📊 | [**us_election_simulation_project**](https://github.com/obay6692/us_election_simulation_project) | Streamlit · Monte Carlo · Plotly · Pandas |
+| 👁️ | [**ikt213-computer-vision-assignments**](https://github.com/obay6692/ikt213-computer-vision-assignments) | OpenCV · ORB · feature matching · face recognition |
 
 ---
 
-### 📫 Get in touch
+## 📫 Get in Touch
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Obay_bin_Khadra-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/obay-bin-khadraa-61452b1a1/)
-[![GitHub](https://img.shields.io/badge/GitHub-obay6692-181717?logo=github)](https://github.com/obay6692)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Obay_bin_Khadra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/obay-bin-khadraa-61452b1a1/)
+[![GitHub](https://img.shields.io/badge/GitHub-obay6692-181717?style=for-the-badge&logo=github)](https://github.com/obay6692)
+[![Location](https://img.shields.io/badge/Norway-🇳🇴-EF2B2D?style=for-the-badge)](https://www.google.com/maps/place/Norway)
 
-Open to **DevOps**, **Software Architecture**, **Cloud Engineering**, and **IoT** roles.
+> Open to **DevOps**, **Software Architecture**, **Cloud Engineering**, and **IoT** roles.
