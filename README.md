@@ -1,8 +1,8 @@
 ## Hi, I'm Obay 👋
 
-**Software Architect & DevOps Engineer** from Norway. I build, ship, and operate systems end-to-end — from embedded firmware on STM32 boards to Kubernetes platforms running a full social-media stack.
+**Software Architect & DevOps Engineer** from Norway. I build, ship, and operate systems end-to-end — from embedded firmware on STM32 boards, through Kubernetes platforms running a full social-media stack, to a production-grade fintech SaaS for Norwegian SMBs.
 
-Recent graduate of the **University of Agder (UiA)**, now applying what I learned to real-world DevOps, cloud-native, and IoT problems.
+Recent graduate of the **University of Agder (UiA)**, now applying what I learned to real-world DevOps, cloud-native, fintech, and IoT problems.
 
 ---
 
@@ -11,7 +11,8 @@ Recent graduate of the **University of Agder (UiA)**, now applying what I learne
 ```
 ☁️  Cloud / Platform    Kubernetes · ArgoCD · Sealed Secrets · OpenStack
 🏗️  IaC                 Terraform · Ansible · Vagrant · Docker · cloud-init
-🔧  Backend             ASP.NET Core · Flask · Go · REST APIs · EF Core
+🔧  Backend             FastAPI · ASP.NET Core · Flask · Go · REST APIs · SQLAlchemy · EF Core
+🎨  Frontend            React · React Router · Axios · Recharts
 🤖  AI / Vision         OpenCV · feature matching · face recognition
 📊  Data / Stats        Streamlit · Plotly · Monte Carlo · Pandas · NumPy
 ⚙️  Embedded / IoT      Mbed OS · STM32 · I²C · WiFi · RTOS · Thingsboard
@@ -21,7 +22,11 @@ Recent graduate of the **University of Agder (UiA)**, now applying what I learne
 
 ---
 
-### 🚀 Featured projects
+### 🎓 Bachelor's Graduation Project
+
+[**Virtual CFO**](https://github.com/obay6692/virtual-cfo) — full-stack financial management platform for Norwegian SMBs. **FastAPI + React** backend & frontend, **JWT + TOTP 2FA** authentication, rate limiting, account lockout, GDPR-compliant data export, **smart payment prioritization** (5-factor weighted algorithm), **30-day cash flow forecasting** with Norwegian MVA deadlines, and an **AI financial advisor** powered by Ollama. Fully Dockerized with an Nginx reverse proxy serving over HTTPS.
+
+### 🚀 Other featured projects
 
 | Project | What it is |
 |---------|------------|
@@ -30,7 +35,6 @@ Recent graduate of the **University of Agder (UiA)**, now applying what I learne
 | [**flask-2fa-oauth-app**](https://github.com/obay6692/flask-2fa-oauth-app) | Flask web app with TOTP two-factor authentication, GitHub OAuth, bcrypt password hashing, and account lockout. |
 | [**ikt114-it-orchestration-devops**](https://github.com/obay6692/ikt114-it-orchestration-devops) | DevOps stack from scratch — bash, Docker, Vagrant, Ansible, and Terraform IaC deploying CTFd on OpenStack. |
 | [**us_election_simulation_project**](https://github.com/obay6692/us_election_simulation_project) | Monte Carlo simulation of U.S. presidential elections — multi-page Streamlit dashboard with historical comparison and interactive maps. |
-| [**ikt213-computer-vision-assignments**](https://github.com/obay6692/ikt213-computer-vision-assignments) | Computer Vision with OpenCV — image processing, ORB feature matching, and face recognition. |
 
 ---
 
