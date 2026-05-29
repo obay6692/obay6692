@@ -90,3 +90,4 @@ FastAPI  +  React  +  Ollama  +  Docker  +  Nginx (HTTPS)
 [![Location](https://img.shields.io/badge/Norway-🇳🇴-EF2B2D?style=for-the-badge)](https://www.google.com/maps/place/Norway)
 
 > Open to **DevOps**, **Software Architecture**, **Cloud Engineering**, and **IoT** roles.
+
